@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Debug Exercise</title>
+    <style>
+     .tooltip .tooltipText{
+      visibility: hidden;
+     }
+     .tooltip:hover .tooltipText{
+      visibility: visible;
+     }
+    </style>
   </head>
   <body>
-    <!-- tooltip attribute:=> this attribute contain some extra information of the output content, when we hover over on output content it's provide us those tooltip write inside value  -->
-    <p tooltip="Dot Batch">Web Development Master Course</p>
+    <!-- tooltip:=> this tooltip contain some extra information of the output content, when we hover over on output content it's provide us those tooltip write inside value  -->
+    <p class="tooltip">Web Development Master Course
+      <span class="tooltipText">Dot Batch</span>
+    </p>
   </body>
 </html>
